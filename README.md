@@ -1,8 +1,8 @@
-# slidev-theme-slidev-thema-pop
+# slidev-theme-horizon
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-slidev-thema-pop?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-slidev-thema-pop)
+[![NPM version](https://img.shields.io/npm/v/slidev-theme-horizon?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-horizon)
 
-A pop theme for [Slidev](https://github.com/slidevjs/slidev) that provides modern, engaging, and visually appealing presentation layouts and components.
+A horizon theme for [Slidev](https://github.com/slidevjs/slidev) that provides modern, engaging, and visually appealing presentation layouts and components.
 
 ## Features
 
@@ -17,7 +17,7 @@ A pop theme for [Slidev](https://github.com/slidevjs/slidev) that provides moder
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
 
 <pre><code>---
-theme: <b>slidev-thema-pop</b>
+theme: <b>horizon</b>
 ---</code></pre>
 
 Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).

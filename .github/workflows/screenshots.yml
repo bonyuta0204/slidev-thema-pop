@@ -1,0 +1,44 @@
+name: Generate Screenshots
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'components/**'
+      - 'layouts/**'
+      - 'styles/**'
+      - 'example.md'
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: true
+
+      - name: Generate screenshots
+        run: pnpm screenshot
+
+      - name: Create screenshots directory if it doesn't exist
+        run: mkdir -p screenshots
+
+      - name: Move screenshots to screenshots directory
+        run: mv *.png screenshots/ || true
+
+      - name: Commit and push screenshots
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update screenshots of slidev-theme-horizon [skip ci]"
+          file_pattern: "screenshots/*.png"
