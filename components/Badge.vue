@@ -1,17 +1,7 @@
 <template>
-  <div class="badge">
+  <div
+    class="absolute top-4 right-4 bg-red-400 text-white px-4 py-1 rounded-md !text-xl !font-bold"
+  >
     <slot></slot>
   </div>
 </template>
-
-<style scoped>
-.badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: #f87171;
-  color: white;
-  padding: 0.25rem 1rem;
-  border-radius: 0.375rem;
-}
-</style>

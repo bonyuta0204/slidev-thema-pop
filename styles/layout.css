@@ -17,7 +17,7 @@
   @apply pb-2 pt-4;
 }
 
-.slidev-layout.default {
+.slidev-layout {
   @apply text-center;
   @apply flex flex-col;
 
@@ -42,21 +42,15 @@
   }
 }
 
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
+.slidev-layout.center {
+  @apply justify-center;
 
   h1 {
-    @apply text-6xl leading-20 inline-block;
+    @apply absolute left-1/2 top-4 -translate-x-1/2;
   }
 
-  h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
-  }
-
-  p + h2,
-  ul + h2,
-  table + h2 {
-    @apply mt-10;
+  p, div, span, ul, ol, blockquote {
+    @apply text-5xl;
+    @apply text-left;
   }
 }

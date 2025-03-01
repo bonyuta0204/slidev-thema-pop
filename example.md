@@ -3,19 +3,6 @@ theme: ./
 title: Building Modern Web Applications
 ---
 
-# Building Modern Web Applications
-## A Developer's Guide
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
-    Press Space for next page <div class="i-carbon:arrow-right inline-block"/>
-  </span>
-</div>
-
-<Badge>Modern Web Dev</Badge>
-
----
-
 # Key Topics
 
 - Frontend Frameworks
@@ -134,16 +121,11 @@ function initializeApp(config: AppConfig) {
 
 ---
 layout: center
-class: "text-center"
 ---
 
 # Backend Architecture
 
-  - 'RESTful APIs',
-  - 'GraphQL',
-  - 'Microservices',
-  - 'Serverless Functions',
-  - 'WebSockets'
+Backend Architecture is **important for scalability** and performance.
 
 ---
 
@@ -158,8 +140,7 @@ class: "text-center"
 ]" />
 
 ---
-layout: center
-class: "text-center"
+layout: default
 ---
 
 # Learn More
