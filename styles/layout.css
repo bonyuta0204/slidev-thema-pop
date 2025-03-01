@@ -25,6 +25,14 @@
     @apply text-left;
   }
 
+  ul {
+    @apply list-disc list-inside pl-4;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
   h1 {
     @apply text-4xl relative inline-block mx-auto text-left;
 

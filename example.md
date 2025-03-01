@@ -101,7 +101,16 @@ Framework is a **building block** for building web applications.
 <BoxList :items="[
   'Accessibility',
   'Security'
-]" />
+]"/>
+
+---
+
+# Development Challenges
+
+<BoxList :items="[
+  'Accessibility',
+  'Security'
+]" :activeIndex="0"/>
 
 ---
 layout: image-right
@@ -146,18 +155,6 @@ class: "text-center"
   'Redis',
   'Elasticsearch',
   'Firebase'
-]" />
-
----
-
-# DevOps Pipeline
-
-<BoxList :items="[
-  'Continuous Integration',
-  'Automated Testing',
-  'Deployment Strategy',
-  'Monitoring',
-  'Scaling'
 ]" />
 
 ---
