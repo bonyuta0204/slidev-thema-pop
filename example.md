@@ -1,142 +1,122 @@
 ---
 theme: ./
-title: Building Modern Web Applications
+title: Modern Cloud Architecture
+subtitle: Building Scalable and Resilient Systems
 ---
 
-# Key Topics
+# Modern Cloud Architecture
 
-- Frontend Frameworks
-- Backend Architecture
-- Database Solutions
-- DevOps & Deployment
-- Security Best Practices
+<Badge>2025 Edition</Badge>
+
+---
+layout: center
+---
+
+# Key Pillars of Cloud Architecture
 
 ---
 
-# Modern Frontend Stack
+# Cloud Architecture Pillars
 
 <MenuList :items="[
-  'React/Vue/Angular',
-  'TypeScript',
-  'Tailwind CSS',
-  'State Management',
-  'Testing Tools'
+  'Scalability',
+  'Reliability',
+  'Security',
+  'Cost Optimization',
+  'Performance'
 ]" />
 
 ---
 
-# Modern Frontend Stack
+# Cloud Architecture Pillars
 
 <MenuList :items="[
-  'React/Vue/Angular',
-  'TypeScript',
-  'Tailwind CSS',
-  'State Management',
-  'Testing Tools'
+  'Scalability',
+  'Reliability',
+  'Security',
+  'Cost Optimization',
+  'Performance'
 ]" :activeIndex="0"/>
 
 ---
 
-# React/Vue/Angular
+# Scalability Patterns
 
-## Why Use These Frameworks?
+## Designing for Growth
 
-Framework is a **building block** for building web applications.
-
-- Component-Based Architecture
-  - Reusable building blocks
-  - Better code organization
-- Rich Ecosystem
-  - Vast library of tools
-  - Active community
-- Performance Optimizations
-  - Built-in best practices
-  - Efficient rendering
-
+- Horizontal scaling
+- Microservices architecture
+- Stateless design
+- Load balancing
 
 ---
 
-# Modern Frontend Stack
+# Cloud Architecture Pillars
 
 <MenuList :items="[
-  'React/Vue/Angular',
-  'TypeScript',
-  'Tailwind CSS',
-  'State Management',
-  'Testing Tools'
-]" :activeIndex="1"/>
+  'Scalability',
+  'Reliability',
+  'Security',
+  'Cost Optimization',
+  'Performance'
+]" :activeIndex="2"/>
 
 ---
 
-# TypeScript
-
-## Why TypeScript?
-
-### Key Benefits
-
-1. Static Type Checking
-   - Catch errors **early**
-   - Better IDE support
-
-2. Enhanced Productivity
-   - Autocompletion
-   - Refactoring tools
----
-
-# Development Challenges
+# Security Best Practices
 
 <BoxList :items="[
-  'Accessibility',
-  'Security'
+  'Zero Trust Model',
+  'Defense in Depth'
 ]"/>
 
 ---
 
-# Development Challenges
+# Security Best Practices
 
 <BoxList :items="[
-  'Accessibility',
-  'Security'
+  'Zero Trust Model',
+  'Defense in Depth'
 ]" :activeIndex="0"/>
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1537884944318-390069bb8665
+image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31
 ---
 
-# Code Example
+# Infrastructure as Code
 
-```typescript
-interface AppConfig {
-  theme: 'light' | 'dark'
-  language: string
-  features: string[]
-}
-
-function initializeApp(config: AppConfig) {
-  // Setup application
-  console.log('App initialized with:', config)
-}
+```yaml
+resources:
+  webserver:
+    type: compute.v1.instance
+    properties:
+      machineType: e2-medium
+      zone: us-central1-a
+      networkInterfaces:
+        - network: global/networks/default
+      disks:
+        - boot: true
+          autoDelete: true
+          initializeParams:
+            sourceImage: projects/debian-cloud/global/images/family/debian-11
 ```
 
 ---
 layout: center
 ---
 
-# Backend Architecture
-
-Backend Architecture is **important for scalability** and performance.
+# Deployment Strategies
 
 ---
 
-# Database Solutions
+# Deployment Options
 
 <MenuList :items="[
-  'PostgreSQL',
-  'MongoDB',
-  'Redis',
-  'Elasticsearch',
-  'Firebase'
+  'Blue-Green Deployment',
+  'Canary Releases',
+  'Feature Flags',
+  'Rolling Updates'
 ]" />
 
 ---
@@ -145,6 +125,6 @@ layout: default
 
 # Learn More
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcase](https://sli.dev/showcases.html)
+[Cloud Architecture Center](https://cloud.google.com/architecture) · [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) · [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/)
 
 <Badge>Thank You!</Badge>
