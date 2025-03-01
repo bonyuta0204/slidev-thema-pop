@@ -12,7 +12,7 @@ title: Building Modern Web Applications
   </span>
 </div>
 
-<RepostBadge text="Modern Web Dev" />
+<Badge>Modern Web Dev</Badge>
 
 ---
 
@@ -50,9 +50,54 @@ title: Building Modern Web Applications
 
 ---
 
+# React/Vue/Angular
+
+## Why Use These Frameworks?
+
+Framework is a **building block** for building web applications.
+
+- Component-Based Architecture
+  - Reusable building blocks
+  - Better code organization
+- Rich Ecosystem
+  - Vast library of tools
+  - Active community
+- Performance Optimizations
+  - Built-in best practices
+  - Efficient rendering
+
+> "Choose the right tool for the job" - *Software Engineering Principle*
+---
+# Modern Frontend Stack
+
+<MenuList :items="[
+  'React/Vue/Angular',
+  'TypeScript',
+  'Tailwind CSS',
+  'State Management',
+  'Testing Tools'
+]" :activeIndex="1"/>
+
+---
+
+# TypeScript
+
+## Why TypeScript?
+
+### Key Benefits
+
+1. Static Type Checking
+   - Catch errors **early**
+   - Better IDE support
+
+2. Enhanced Productivity
+   - Autocompletion
+   - Refactoring tools
+---
+
 # Development Challenges
 
-<ChallengeGrid :challenges="[
+<BoxList :challenges="[
   { title: 'Performance Optimization' },
   { title: 'Cross-browser Compatibility' },
   { title: 'Mobile Responsiveness' },
@@ -109,7 +154,7 @@ class: "text-center"
 
 # DevOps Pipeline
 
-<ChallengeGrid :challenges="[
+<BoxList :challenges="[
   { title: 'Continuous Integration' },
   { title: 'Automated Testing' },
   { title: 'Deployment Strategy' },
@@ -126,4 +171,4 @@ class: "text-center"
 
 [Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcase](https://sli.dev/showcases.html)
 
-<RepostBadge text="Thank You!" />
+<Badge>Thank You!</Badge>

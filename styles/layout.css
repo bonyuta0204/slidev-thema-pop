@@ -1,12 +1,16 @@
 :root {
   /* default theme color */
   /* can be overrided by uses `themeConfig` option */
-  --slidev-theme-primary: #5d8392;
+  --slidev-theme-primary: #FCA5A5;
 }
 
 #slideshow {
   font-family: 'Meiryo', 'メイリオ', 'Yu Gothic', 'YuGothic', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Microsoft YaHei', 'Osaka', sans-serif;
   @apply text-gray-700;
+
+  strong {
+    color: var(--slidev-theme-primary);
+  }
 }
 
 .slidev-layout {
@@ -16,7 +20,7 @@
 .slidev-layout.default {
   @apply text-center;
 
-  h1, p, div, span, ul, ol, blockquote {
+  h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, blockquote {
     @apply text-left;
   }
 

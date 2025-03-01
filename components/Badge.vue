@@ -1,14 +1,15 @@
-<!-- components/RepostBadge.vue -->
 <template>
-  <div class="repost-badge">再掲</div>
+  <div class="badge">
+    <slot></slot>
+  </div>
 </template>
 
 <style scoped>
-.repost-badge {
+.badge {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: #F87171;
+  background-color: #f87171;
   color: white;
   padding: 0.25rem 1rem;
   border-radius: 0.375rem;
