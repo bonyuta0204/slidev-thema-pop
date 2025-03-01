@@ -14,21 +14,22 @@
 }
 
 .slidev-layout {
-  @apply pb-2 pt-2;
+  @apply pb-2 pt-4;
 }
 
 .slidev-layout.default {
   @apply text-center;
+  @apply flex flex-col;
 
   h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, blockquote {
     @apply text-left;
   }
 
   h1 {
-    @apply text-4xl leading-20 relative inline-block mx-auto text-left;
+    @apply text-4xl relative inline-block mx-auto text-left;
 
     &::after {
-      @apply content-[""] absolute bottom-3 left-1/2 transform -translate-x-1/2 w-[calc(100%+30px)] h-2 bg-yellow-300 rounded-full;
+      @apply content-[""] absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-[calc(100%+30px)] h-2 bg-yellow-300 rounded-full;
     }
   }
 }

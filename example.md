@@ -66,8 +66,9 @@ Framework is a **building block** for building web applications.
   - Built-in best practices
   - Efficient rendering
 
-> "Choose the right tool for the job" - *Software Engineering Principle*
+
 ---
+
 # Modern Frontend Stack
 
 <MenuList :items="[
@@ -97,12 +98,9 @@ Framework is a **building block** for building web applications.
 
 # Development Challenges
 
-<BoxList :challenges="[
-  { title: 'Performance Optimization' },
-  { title: 'Cross-browser Compatibility' },
-  { title: 'Mobile Responsiveness' },
-  { title: 'Accessibility' },
-  { title: 'Security' }
+<BoxList :items="[
+  'Accessibility',
+  'Security'
 ]" />
 
 ---
@@ -154,12 +152,12 @@ class: "text-center"
 
 # DevOps Pipeline
 
-<BoxList :challenges="[
-  { title: 'Continuous Integration' },
-  { title: 'Automated Testing' },
-  { title: 'Deployment Strategy' },
-  { title: 'Monitoring' },
-  { title: 'Scaling' }
+<BoxList :items="[
+  'Continuous Integration',
+  'Automated Testing',
+  'Deployment Strategy',
+  'Monitoring',
+  'Scaling'
 ]" />
 
 ---

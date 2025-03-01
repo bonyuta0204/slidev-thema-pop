@@ -1,6 +1,6 @@
 <!-- components/MenuList.vue -->
 <template>
-  <div class="flex flex-col space-y-4 h-100 justify-center">
+  <div class="flex flex-col space-y-4 h-100 justify-center flex-1">
     <div
       v-for="(item, index) in items"
       :key="index"
