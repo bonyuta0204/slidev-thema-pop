@@ -1,0 +1,16 @@
+# Development files
+.github/
+example.md
+screenshots/
+node_modules/
+.DS_Store
+
+# Build outputs
+dist/
+.cache/
+.temp/
+
+# Configuration files
+.eslintrc
+.prettierrc
+.vscode/

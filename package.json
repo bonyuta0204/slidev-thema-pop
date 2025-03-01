@@ -1,7 +1,14 @@
 {
-  "name": "slidev-theme-slidev-thema-pop",
-  "version": "0.0.0",
+  "name": "slidev-theme-horizon",
+  "version": "0.1.1",
   "type": "module",
+  "description": "A modern and engaging theme for Slidev presentations",
+  "author": "Yuta Nakamura",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bonyuta0204/slidev-theme-horizon"
+  },
   "keywords": [
     "slidev-theme",
     "slidev"
@@ -13,13 +20,15 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png"
+    "screenshot": "slidev export example.md --format png",
+    "release": "bumpp --commit --push --tag"
   },
   "dependencies": {
     "@slidev/types": "^51.3.0"
   },
   "devDependencies": {
-    "@slidev/cli": "^51.3.0"
+    "@slidev/cli": "^51.3.0",
+    "bumpp": "^10.0.3"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
