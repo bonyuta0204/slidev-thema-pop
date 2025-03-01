@@ -1,10 +1,10 @@
 ---
 theme: ./
+title: Building Modern Web Applications
 ---
 
-# Slidev Theme Starter
-
-Presentation slides for developers
+# Building Modern Web Applications
+## A Developer's Guide
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
@@ -12,61 +12,71 @@ Presentation slides for developers
   </span>
 </div>
 
----
-
-# What is Slidev?
-
-Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
-
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
-- 🎨 **Themable** - themes can be shared and reused as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<RepostBadge text="Modern Web Dev" />
 
 ---
 
-# Navigation
+# Key Topics
 
-Hover on the bottom-left corner to see the navigation's controls panel
+- Frontend Frameworks
+- Backend Architecture
+- Database Solutions
+- DevOps & Deployment
+- Security Best Practices
 
-## Keyboard Shortcuts
+---
 
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+# Modern Frontend Stack
+
+<MenuList :items="[
+  'React/Vue/Angular',
+  'TypeScript',
+  'Tailwind CSS',
+  'State Management',
+  'Testing Tools'
+]" />
+
+---
+
+# Modern Frontend Stack
+
+<MenuList :items="[
+  'React/Vue/Angular',
+  'TypeScript',
+  'Tailwind CSS',
+  'State Management',
+  'Testing Tools'
+]" :activeIndex="0"/>
+
+---
+
+# Development Challenges
+
+<ChallengeGrid :challenges="[
+  { title: 'Performance Optimization' },
+  { title: 'Cross-browser Compatibility' },
+  { title: 'Mobile Responsiveness' },
+  { title: 'Accessibility' },
+  { title: 'Security' }
+]" />
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: https://images.unsplash.com/photo-1537884944318-390069bb8665
 ---
 
-# Code
+# Code Example
 
-Use code snippets and get the highlighting directly!
-
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
+```typescript
+interface AppConfig {
+  theme: 'light' | 'dark'
+  language: string
+  features: string[]
 }
 
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
+function initializeApp(config: AppConfig) {
+  // Setup application
+  console.log('App initialized with:', config)
 }
 ```
 
@@ -75,6 +85,45 @@ layout: center
 class: "text-center"
 ---
 
+# Backend Architecture
+
+  - 'RESTful APIs',
+  - 'GraphQL',
+  - 'Microservices',
+  - 'Serverless Functions',
+  - 'WebSockets'
+
+---
+
+# Database Solutions
+
+<MenuList :items="[
+  'PostgreSQL',
+  'MongoDB',
+  'Redis',
+  'Elasticsearch',
+  'Firebase'
+]" />
+
+---
+
+# DevOps Pipeline
+
+<ChallengeGrid :challenges="[
+  { title: 'Continuous Integration' },
+  { title: 'Automated Testing' },
+  { title: 'Deployment Strategy' },
+  { title: 'Monitoring' },
+  { title: 'Scaling' }
+]" />
+
+---
+layout: center
+class: "text-center"
+---
+
 # Learn More
 
-[Documentation](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcase](https://sli.dev/showcases.html)
+
+<RepostBadge text="Thank You!" />
