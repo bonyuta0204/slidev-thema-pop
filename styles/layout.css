@@ -15,11 +15,30 @@
 
 .slidev-layout {
   @apply pb-2 pt-4;
-}
-
-.slidev-layout {
   @apply text-center;
   @apply flex flex-col;
+  background-color: #7ac5e2;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 20px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  /* Ensure all content is above the pseudo-element */
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
 
   h1, h2, h3, h4, h5, h6, p, div, span, ul, ol, blockquote {
     @apply text-left;
